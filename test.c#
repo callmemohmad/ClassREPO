@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+class Benzz {
+public: 
+    bool start() {
+        bool result = startEngine() && startElectronicService() && startLightSystem();
+        return result;
+    }
+
+private:
+   
+    bool startEngine() {
+        cout << "Engine started successfully!" << endl;
+        return true;  
+    }
+    
+    bool startElectronicService() {
+        cout << "Electronic service started successfully!" << endl;
+        return true;  
+    }
+    
+    bool startLightSystem() {
+        cout << "Light system started successfully!" << endl;
+        return true; 
+    }
+};
+
+int main() {
+    Benzz myCar;
+    if (myCar.start()) {
+        cout << "Car started successfully!" << endl;
+    } else {
+        cout << "Failed to start the car!" << endl;
+    }
+    return 0;
+}
