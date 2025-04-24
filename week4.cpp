@@ -21,7 +21,7 @@ class Car {
                             return Move; 
                             
                 }
-}    
+}
 class Prid : Car {
     protected:
     bool DoWeArriveAlive; //Usually not
